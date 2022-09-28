@@ -15,8 +15,8 @@ public class SchoolSystem implements ISignUp {
 	String[]p;
 	public void parse(String input) {
 		String regex="\\D+";
-		String parse[]=input.split(regex);
-		p=new String[parse.length];
+		String parse[]=input.split(regex);#将字符串中的非数字字符当分隔符
+		p=new String[parse.length]
 		for(int i=0;i<parse.length;i++) {
 			if(parse[i]!=null)
 			this.p[i]=parse[i];
@@ -30,7 +30,7 @@ public class SchoolSystem implements ISignUp {
 	public void print() {
 		String str="[";
 		String o="\\d{2,}";
-		String t="\\d{1}";
+		String t="\\d{1}";#芜湖
 		for(int i=0;i<p.length;i++) {
 			if(p[i]!=null) {
 				if(p[i].matches(o)==true) {
