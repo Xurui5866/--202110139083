@@ -30,7 +30,7 @@ public class SchoolSystem implements ISignUp {
 	public void print() {
 		String str="[";
 		String o="\\d{2,}";
-		String t="\\d{1}";#芜湖
+		String t="\\d{1}";#wuhu
 		for(int i=0;i<p.length;i++) {
 			if(p[i]!=null) {
 				if(p[i].matches(o)==true) {
