@@ -15,7 +15,7 @@ public class SchoolSystem implements ISignUp {
 	String[]p;
 	public void parse(String input) {
 		String regex="\\D+";
-		String parse[]=input.split(regex);#将字符串中的非数字字符当分隔符
+		String parse[]=input.split(regex);
 		p=new String[parse.length]
 		for(int i=0;i<parse.length;i++) {
 			if(parse[i]!=null)
